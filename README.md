@@ -1,6 +1,15 @@
-# greedy
+# GreedyImageLoader
 
 To get images use the function below
 
-GreedyImageLoader.with(holder.itemView.getContext()).setCachingType(GreedyImageLoader.DISK).load(holder.image,list.get(position).getUrls().getRegular());
+GreedyImageLoader.with(context)
+.setCachingType(GreedyImageLoader.DISK) 
+.load(imageView,imageUrl);
 
+Functions:
+load(imageview,imageurl)
+  pass imageview annd imageurl
+setChachingType(int savestrategy)
+  savestrategy can be of two type - 1.GreedyImageLoader.DISK
+                                    2.GreedyImageLoader.MEMORY
+                                    
